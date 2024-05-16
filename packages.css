@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+   
+  }
+
+  body{
+    background-color: black;
+  }
+
+  .nav {
+    height: 145px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 99;
+    background-color: black;
+  }
+  
+  .nav img {
+    height: 100px;
+  }
+  
+  .nav-content {
+    padding-left: 650px;
+    display: flex;
+    gap: 50px;
+  }
+  
+  .nav-content a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .nav-content a:hover {
+    color: #30d5c8;
+    border-bottom: 2px solid #30d5c8;
+    transition: all ease 1s;
+  }
+
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+  }
+
+  .packages{
+    position: relative;
+    top: 100px;
+  }
+  
+  .text-box h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: aliceblue;
+  }
+
+
+  .container {
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+  }
+  
+  .container:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    /* border-radius: 2rem; */
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    /* background-color: rgb(165, 110, 42); */
+  }
+  
+ 
+
+  .front .h2{
+    position: relative;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    text-align: center;
+    padding: 20px;
+    z-index: 100;
+  }
+
+  .list-remove{
+    list-style: none;
+  }
+  
+  .back {
+    background-color: #402b05;
+    color: aliceblue;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+.full{
+  display: flex;
+  gap: 100px;
+  padding: 100px;
+  padding-top: 5px;
+  margin-top: 20px;
+  
+  
+}
+.content{
+  padding: 10px;
+}
